@@ -13,3 +13,21 @@ class melodyViewController_Start_Assembled : UIViewController {
         return UIStatusBarStyle.lightContent;
     }
 }
+
+class melodyViewController_Start_Main : UIViewController {
+    @IBOutlet weak var Toolbar_VersionNumber: UIBarButtonItem!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad();
+        
+        if let VersionNumber = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
+            Toolbar_VersionNumber.title = VersionNumber;
+        }
+    }
+}
+
+class melodyViewController_Start_Sessions : UIViewController {
+    @IBAction func event_Dismiss (_ sender: Any) {
+        dismiss(animated: true, completion: nil);
+    }
+}

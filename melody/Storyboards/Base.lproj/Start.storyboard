@@ -31,6 +31,9 @@
                             </visualEffectView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPo-zb-8tt" userLabel="Content">
                                 <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                                <connections>
+                                    <segue destination="y80-75-6Os" kind="embed" id="uyb-MI-zEX"/>
+                                </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -55,8 +58,112 @@
             </objects>
             <point key="canvasLocation" x="-440" y="-3"/>
         </scene>
+        <!--Navigation Controller (Main)-->
+        <scene sceneID="ofw-RT-QUW">
+            <objects>
+                <navigationController title="Navigation Controller (Main)" definesPresentationContext="YES" navigationBarHidden="YES" toolbarHidden="NO" id="y80-75-6Os" userLabel="Navigation Controller (Main)" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KyN-CB-CUh">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="fnS-5P-cbz">
+                        <rect key="frame" x="0.0" y="704" width="1024" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="cnf-fH-AGW" kind="relationship" relationship="rootViewController" id="7pj-Qf-L8f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GEI-wK-i6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193" y="-3"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="Vjl-Hw-YAb">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ex-fI-ZcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Main View Controller" id="cnf-fH-AGW" customClass="melodyViewController_Start_Main" customModule="melody" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OUR-Qq-Ktg">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8UG-Jy-lUj"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem enabled="NO" title="melody." id="X7v-ZP-ih7" userLabel="Title">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="n35-YW-Rtt"/>
+                        <barButtonItem enabled="NO" title="0.0.0" id="V2C-YA-IK4"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Dte-L8-dWu"/>
+                        <barButtonItem image="Icon-New" id="HI7-BM-YMT">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="event_DisplayCreationPanel:" destination="cnf-fH-AGW" id="w9R-Uw-sLT"/>
+                                <segue destination="mc1-ec-ZHZ" kind="presentation" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="9Af-R6-8ka"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="5qd-Oi-oYa"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="Toolbar_VersionNumber" destination="V2C-YA-IK4" id="G4R-8i-3fU"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="825" y="-3"/>
+        </scene>
+        <!--Navigation Controller (Sessions)-->
+        <scene sceneID="PNc-su-zsW">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yye-27-EaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController title="Navigation Controller (Sessions)" navigationBarHidden="YES" toolbarHidden="NO" id="mc1-ec-ZHZ" userLabel="Navigation Controller (Sessions)" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KSF-hZ-PEc">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="oKh-KR-gkL">
+                        <rect key="frame" x="0.0" y="704" width="1024" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="sap-wV-eaP" kind="relationship" relationship="rootViewController" id="u1h-JC-lej"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="193" y="788"/>
+        </scene>
+        <!--Sessions View Controller-->
+        <scene sceneID="3kA-99-rUy">
+            <objects>
+                <viewController title="Sessions View Controller" id="sap-wV-eaP" customClass="melodyViewController_Start_Sessions" customModule="melody" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dtr-gu-ZFv">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6qU-yV-BFm"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem enabled="NO" title="sessions." id="SNU-Zs-6qm" userLabel="Title">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="7j1-l2-UE0"/>
+                        <barButtonItem image="Icon-DownArrow" id="Fp0-tg-eMQ" userLabel="Dismiss">
+                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="event_Dismiss:" destination="sap-wV-eaP" id="7Xw-G6-bDh"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="VyR-1G-6TI"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cLh-2d-m8I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="788"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Background One" width="1350" height="900"/>
+        <image name="Icon-DownArrow" width="25" height="25"/>
+        <image name="Icon-New" width="25" height="25"/>
     </resources>
 </document>
