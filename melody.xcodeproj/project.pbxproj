@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A921055C20A8E0A2001C4F39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A921055B20A8E0A2001C4F39 /* AppDelegate.swift */; };
-		A921055E20A8E0A2001C4F39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A921055D20A8E0A2001C4F39 /* ViewController.swift */; };
-		A921056120A8E0A2001C4F39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A921055F20A8E0A2001C4F39 /* Main.storyboard */; };
+		A921056120A8E0A2001C4F39 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A921055F20A8E0A2001C4F39 /* Start.storyboard */; };
 		A921056320A8E0A2001C4F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A921056220A8E0A2001C4F39 /* Assets.xcassets */; };
-		A921056620A8E0A2001C4F39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A921056420A8E0A2001C4F39 /* LaunchScreen.storyboard */; };
+		A921056620A8E0A2001C4F39 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A921056420A8E0A2001C4F39 /* Splash.storyboard */; };
 		A921057120A8E0A2001C4F39 /* melodyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A921057020A8E0A2001C4F39 /* melodyTests.swift */; };
 		A921057C20A8E0A2001C4F39 /* melodyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A921057B20A8E0A2001C4F39 /* melodyUITests.swift */; };
+		A921058C20A8E48A001C4F39 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = A921058B20A8E48A001C4F39 /* Start.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +36,9 @@
 /* Begin PBXFileReference section */
 		A921055820A8E0A2001C4F39 /* melody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = melody.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A921055B20A8E0A2001C4F39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A921055D20A8E0A2001C4F39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A921056020A8E0A2001C4F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A921056020A8E0A2001C4F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Start.storyboard; sourceTree = "<group>"; };
 		A921056220A8E0A2001C4F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A921056520A8E0A2001C4F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A921056520A8E0A2001C4F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Splash.storyboard; sourceTree = "<group>"; };
 		A921056720A8E0A2001C4F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A921056C20A8E0A2001C4F39 /* melodyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = melodyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A921057020A8E0A2001C4F39 /* melodyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = melodyTests.swift; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		A921057720A8E0A2001C4F39 /* melodyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = melodyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A921057B20A8E0A2001C4F39 /* melodyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = melodyUITests.swift; sourceTree = "<group>"; };
 		A921057D20A8E0A2001C4F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A921058B20A8E48A001C4F39 /* Start.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,10 @@
 			isa = PBXGroup;
 			children = (
 				A921055B20A8E0A2001C4F39 /* AppDelegate.swift */,
-				A921055D20A8E0A2001C4F39 /* ViewController.swift */,
-				A921055F20A8E0A2001C4F39 /* Main.storyboard */,
 				A921056220A8E0A2001C4F39 /* Assets.xcassets */,
-				A921056420A8E0A2001C4F39 /* LaunchScreen.storyboard */,
 				A921056720A8E0A2001C4F39 /* Info.plist */,
+				A921058A20A8E451001C4F39 /* Controllers */,
+				A921058920A8E1DE001C4F39 /* Storyboards */,
 			);
 			path = melody;
 			sourceTree = "<group>";
@@ -123,6 +122,23 @@
 				A921057D20A8E0A2001C4F39 /* Info.plist */,
 			);
 			path = melodyUITests;
+			sourceTree = "<group>";
+		};
+		A921058920A8E1DE001C4F39 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A921055F20A8E0A2001C4F39 /* Start.storyboard */,
+				A921056420A8E0A2001C4F39 /* Splash.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A921058A20A8E451001C4F39 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A921058B20A8E48A001C4F39 /* Start.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +245,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A921056620A8E0A2001C4F39 /* LaunchScreen.storyboard in Resources */,
+				A921056620A8E0A2001C4F39 /* Splash.storyboard in Resources */,
 				A921056320A8E0A2001C4F39 /* Assets.xcassets in Resources */,
-				A921056120A8E0A2001C4F39 /* Main.storyboard in Resources */,
+				A921056120A8E0A2001C4F39 /* Start.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A921055E20A8E0A2001C4F39 /* ViewController.swift in Sources */,
+				A921058C20A8E48A001C4F39 /* Start.swift in Sources */,
 				A921055C20A8E0A2001C4F39 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,20 +309,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A921055F20A8E0A2001C4F39 /* Main.storyboard */ = {
+		A921055F20A8E0A2001C4F39 /* Start.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A921056020A8E0A2001C4F39 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Start.storyboard;
 			sourceTree = "<group>";
 		};
-		A921056420A8E0A2001C4F39 /* LaunchScreen.storyboard */ = {
+		A921056420A8E0A2001C4F39 /* Splash.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A921056520A8E0A2001C4F39 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = Splash.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -440,7 +456,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kxmmeron.melody;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -458,7 +474,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kxmmeron.melody;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
